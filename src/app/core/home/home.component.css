@@ -1,0 +1,18 @@
+.engagement-home{
+  min-height:100vh;
+  background-image:url('../../../assets/images/thoranai.png');
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-size:100% auto;
+}
+
+.hero-center{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.vinayagar{
+  max-width:300px;
+}

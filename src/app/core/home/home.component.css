@@ -1,18 +1,33 @@
-.engagement-home{
-  min-height:100vh;
-  background-image:url('../../../assets/images/thoranai.png');
-  background-repeat:no-repeat;
-  background-position:top center;
-  background-size:100% auto;
+.engagement-home {
+  height: 120dvh;
+  background-image: url('../../../assets/images/thoranai.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-center{
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.hero-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vinayagar-pic {
+  max-width: 300px;
 }
 
 .vinayagar-pic{
-  max-width:300px;
+  position: absolute;
+  top: 60px;
+}
+
+.bot{
+  position: absolute;
+  bottom: 0px;
 }

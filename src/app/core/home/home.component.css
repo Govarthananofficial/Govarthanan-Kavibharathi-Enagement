@@ -1,5 +1,5 @@
 .engagement-home {
-  height: 120dvh;
+  height: 100dvh;
   background-image: url('../../../assets/images/thoranai.png');
   background-repeat: no-repeat;
   background-position: top center;
@@ -24,10 +24,57 @@
 
 .vinayagar-pic{
   position: absolute;
-  top: 60px;
+  top: 75px;
 }
-
+.top_1{
+  position: absolute;
+  top: 130px;
+}
 .bot{
   position: absolute;
   bottom: 0px;
+}
+
+.left{
+  position: absolute;
+  bottom: 0px;
+  left: -3px;
+}
+
+.right{
+  position: absolute;
+  bottom: 0px;
+  right: -3px;
+}
+
+*{
+  margin: 0px !important;
+}
+
+.welcome{
+  text-align: center;
+  line-height: 30px;
+}
+
+.names p{
+  text-align: center;
+}
+
+.next p{
+  text-align: center;
+}
+
+.father p{
+  text-align: center;
+}
+
+
+.dir{
+  border: 1px solid red;
+  text-align: center;
+  padding: 6px 30px;
+}
+
+.dir p{
+  white-space: nowrap;
 }

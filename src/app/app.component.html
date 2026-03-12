@@ -1,1 +1,33 @@
-<router-outlet />
+<div *ngIf="isMobile && isPortrait; else blocked">
+  <router-outlet></router-outlet>
+</div>
+
+<ng-template #blocked>
+
+<div class="blocked-wrapper">
+
+  <div class="blocked-card">
+
+    <i class="ri-smartphone-line phone"></i>
+
+    <h2 *ngIf="!isMobile">
+      Open on Mobile Device
+    </h2>
+
+    <h2 *ngIf="isMobile && !isPortrait">
+      Rotate Your Phone
+    </h2>
+
+    <p *ngIf="!isMobile">
+      This engagement invitation is designed only for mobile phones.
+    </p>
+
+    <p *ngIf="isMobile && !isPortrait">
+      Please rotate your phone to portrait mode.
+    </p>
+
+  </div>
+
+</div>
+
+</ng-template>

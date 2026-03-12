@@ -11,10 +11,9 @@
   flex-direction: column;
 }
 
-.center_text_content{
-
+/* .center_text_content {
   margin-top: 600px;
-}
+} */
 
 .hero-center {
   display: flex;
@@ -26,67 +25,173 @@
   max-width: 300px;
 }
 
-.vinayagar-pic{
+.vinayagar-pic {
   position: absolute;
   top: 75px;
 }
-.top_1{
+.top_1 {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.top_1 p{
+.top_1 p {
   position: absolute;
   top: 120px;
-  left: 0px;
-  right: 0px;
-  white-space: nowrap;
+  left: 0;
+  right: 0;
+  margin-bottom: 0px;
+  font-family: "Abyssinica SIL", serif;
+  font-size: 12px;
+  color: #333333;
+
   text-align: center;
+  white-space: nowrap;
 }
-.left{
+.left {
   position: absolute;
   bottom: 0px;
   left: -3px;
   z-index: -9;
 }
 
-.right{
+.right {
   position: absolute;
   bottom: 0px;
   right: -3px;
   z-index: -9;
 }
 
-*{
-  margin: 0px !important;
-}
-
-.welcome{
+.welcome p {
+  font-family: "Abyssinica SIL", serif;
+  font-size: 16px;
+  color: #333333;
   text-align: center;
-  line-height: 30px;
+  margin-bottom: 0px;
 }
 
-.names p{
+.welcome p span {
+  font-family: "FallInLove", cursive;
+  font-size: 24px;
+  color: #185e5a;
+}
+
+/* Name */
+.names p {
+  font-family: "FallInLove", cursive;
+  font-size: 26px;
+  color: #185e5a;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* Degree */
+.names p span {
+  font-family: "Abyssinica SIL", serif;
+  font-size: 10px;
+  color: #185e5a;
+  margin-left: 4px;
+  margin-bottom: 0px;
+}
+
+/* Son of */
+.next p {
+  font-family: "DM Serif Display", serif;
+  font-size: 12px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* Parents */
+.father-mother p {
+  font-family: "DM Serif Display", serif;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.event-date p {
+  font-family: "Abyssinica SIL", serif;
+  font-size: 16px;
+  color: #333333;
   text-align: center;
 }
 
-.next p{
-  text-align: center;
+.event-date sup {
+  font-size: 10px;
 }
 
-.father p{
-  text-align: center;
+/* 25th */
+.event-date .highlight {
+  font-family: "DM Serif Display", serif;
+  color: #185e5a;
+}
+
+/* Time */
+.event-date .time {
+  font-family: "DM Serif Display", serif;
+  color: #185e5a;
+}
+
+.dir-row{
+  margin-top:30px;
+}
+
+/* PRIMARY BUTTON */
+
+.btn-primary-custom{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:12px 22px;
+  background:#185E5A;
+  color:#fff;
+
+  border-radius:6px;
+  font-weight:500;
+  text-decoration:none;
+
+  transition:0.3s;
+}
+
+.btn-primary-custom:hover{
+  background:#134c49;
 }
 
 
-.dir{
-  border: 1px solid red;
-  text-align: center;
-  padding: 6px 30px;
+/* SECONDARY BUTTON */
+
+.btn-secondary-custom{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:12px 22px;
+
+  background:transparent;
+  border:2px solid #185E5A;
+  color:#185E5A;
+
+  border-radius:6px;
+  font-weight:500;
+  text-decoration:none;
+
+  transition:0.3s;
 }
 
-.dir p{
-  white-space: nowrap;
+.btn-secondary-custom:hover{
+  background:#185E5A;
+  color:white;
+}
+
+
+/* ICON SIZE */
+
+.btn-primary-custom i,
+.btn-secondary-custom i{
+  font-size:18px;
 }

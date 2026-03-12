@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=DM+Serif+Display:ital@0;1&display=swap");
+
+@font-face {
+  font-family: "FallInLove";
+  src: url("assets/fonts/Fall in love.ttf") format("truetype");
+}
+
+.abyssinica-sil-regular {
+  font-family: "Abyssinica SIL", serif;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+}
+
+.fall-in-love {
+  font-family: "FallInLove", cursive;
+}

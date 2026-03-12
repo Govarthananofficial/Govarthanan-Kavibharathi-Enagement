@@ -28,7 +28,7 @@ export class AppComponent {
     const width = window.innerWidth;
     const height = window.innerHeight;
 
-    this.isMobile = width <= 480;
+    this.isMobile = width <= 509;
     this.isPortrait = height > width;
   }
 }

@@ -27,7 +27,7 @@
 
 .vinayagar-pic {
   position: absolute;
-  top: 75px;
+  top: 65px;
 }
 .top_1 {
   text-align: center;
@@ -38,7 +38,7 @@
 
 .top_1 p {
   position: absolute;
-  top: 120px;
+  top: 110px;
   left: 0;
   right: 0;
   margin-bottom: 0px;
@@ -136,26 +136,31 @@
   color: #185e5a;
 }
 
-.dir-row{
-  margin-top:30px;
-}
 
-/* PRIMARY BUTTON */
-
-.btn-primary-custom{
-  display:inline-flex;
+.btn-primary-custom,
+.btn-secondary-custom{
+  display:flex;
   align-items:center;
+  justify-content:center;
   gap:8px;
 
-  padding:12px 22px;
+  width:100%;
+  padding:8px;
+
+  font-size:15px;
+  font-weight:500;
+
+  border-radius:8px;
+
+  text-decoration:none;
+  transition:0.3s;
+}
+
+/* PRIMARY */
+
+.btn-primary-custom{
   background:#185E5A;
   color:#fff;
-
-  border-radius:6px;
-  font-weight:500;
-  text-decoration:none;
-
-  transition:0.3s;
 }
 
 .btn-primary-custom:hover{
@@ -163,24 +168,12 @@
 }
 
 
-/* SECONDARY BUTTON */
+/* SECONDARY */
 
 .btn-secondary-custom{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-
-  padding:12px 22px;
-
   background:transparent;
   border:2px solid #185E5A;
   color:#185E5A;
-
-  border-radius:6px;
-  font-weight:500;
-  text-decoration:none;
-
-  transition:0.3s;
 }
 
 .btn-secondary-custom:hover{

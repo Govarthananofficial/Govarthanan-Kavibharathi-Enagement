@@ -1,6 +1,6 @@
 .engagement-home {
   /* height: 100dvh; */
-  /* background-image: url('../../../assets/images/thoranai.png'); 
+  /* background-image: url('../../../assets/images/thoranai.png');
   background-repeat: no-repeat;
   background-position: top center;
  background-size: 100% auto;  */
@@ -227,7 +227,7 @@ top: 30%;
   width:35px;
   height:35px;
   position:absolute;
-  background:url("/assets/images/favicon.png");
+  background:url(../../../assets/images/flowe.png);
   background-size:100% 100%;
   z-index: 999;
 }

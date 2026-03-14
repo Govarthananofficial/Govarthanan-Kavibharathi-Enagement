@@ -224,8 +224,8 @@ top: 30%;
 }
 
 .petal{
-  width:35px;
-  height:35px;
+  width:25px;
+  height:25px;
   position:absolute;
   background:url(../../../assets/images/flowe.png);
   background-size:100% 100%;

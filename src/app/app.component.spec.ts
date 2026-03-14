@@ -20,10 +20,14 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('Govarthanan-Kavibharathi-Engagement');
   });
 
-  it('should render title', () => {
+  it('should show the blocked message outside the supported mobile view', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
+
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Govarthanan-Kavibharathi-Engagement');
+
+    expect(compiled.querySelector('.blocked-card h2')?.textContent).toContain(
+      'Open on Mobile Device',
+    );
   });
 });

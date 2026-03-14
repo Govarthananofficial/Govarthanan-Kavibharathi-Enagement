@@ -1,33 +1,35 @@
 <div *ngIf="isMobile && isPortrait; else blocked">
+  <!-- Background Song -->
+  <audio
+    #bgMusic
+    class="hidden-audio"
+    preload="auto"
+    playsinline
+    [controls]="false"
+    (ended)="onIntroAudioEnded()"
+  >
+    <source src="assets/audio/song.mp3" type="audio/mpeg" />
+  </audio>
+
   <router-outlet></router-outlet>
 </div>
 
 <ng-template #blocked>
+  <div class="blocked-wrapper">
+    <div class="blocked-card">
+      <i class="ri-smartphone-line phone"></i>
 
-<div class="blocked-wrapper">
+      <h2 *ngIf="!isMobile">Open on Mobile Device</h2>
 
-  <div class="blocked-card">
+      <h2 *ngIf="isMobile && !isPortrait">Rotate Your Phone</h2>
 
-    <i class="ri-smartphone-line phone"></i>
+      <p *ngIf="!isMobile">
+        This engagement invitation is designed only for mobile phones.
+      </p>
 
-    <h2 *ngIf="!isMobile">
-      Open on Mobile Device
-    </h2>
-
-    <h2 *ngIf="isMobile && !isPortrait">
-      Rotate Your Phone
-    </h2>
-
-    <p *ngIf="!isMobile">
-      This engagement invitation is designed only for mobile phones.
-    </p>
-
-    <p *ngIf="isMobile && !isPortrait">
-      Please rotate your phone to portrait mode.
-    </p>
-
+      <p *ngIf="isMobile && !isPortrait">
+        Please rotate your phone to portrait mode.
+      </p>
+    </div>
   </div>
-
-</div>
-
 </ng-template>

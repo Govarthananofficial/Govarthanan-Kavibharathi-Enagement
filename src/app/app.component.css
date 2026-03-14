@@ -1,3 +1,7 @@
+.hidden-audio {
+  display: none;
+}
+
 .blocked-wrapper {
   height: 100vh;
   display: flex;
